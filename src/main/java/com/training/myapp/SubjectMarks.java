@@ -2,13 +2,13 @@ package com.training.myapp;
 
 public class SubjectMarks {
 
-	public static String subjectMarks(int sub1,int sub2,int sub3)
+	public static String subjectMarks(int sub1Marks,int sub2Marks,int sub3Marks)
 	{
-		if(sub1>60 && sub2>60 && sub3>60)
+		if(sub1Marks>60 && sub2Marks>60 && sub3Marks>60)
 		{
 			return  "Passed";
 		}
-		else if(sub1>60 && sub2>60 ||sub2>60 && sub3>60 && sub1>60 && sub3>60)
+		else if(sub1Marks>60 && sub2Marks>60 ||sub2Marks>60 && sub3Marks>60 && sub1Marks>60 && sub3Marks>60)
 		{
 			return  "Promoted";
 		}

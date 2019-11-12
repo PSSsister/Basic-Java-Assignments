@@ -13,12 +13,12 @@ public class ArrayMissingNumber {
 	
 	public static long missingNumber(int[] nums) throws ArrayIsEmptyException
 	{
-		if(nums.length==0)
+		if(nums.length==0)                                                        //check length of array is zero 
 		{
 			throw new ArrayIsEmptyException("Array should not be empty");
 		}
-		int expectedNoOfElements=nums.length;
-		int total_sum=expectedNoOfElements *(expectedNoOfElements+1)/2;
+		int expectedNoOfElements=nums.length;                               //expected number of elements
+		int total_sum=expectedNoOfElements *(expectedNoOfElements+1)/2;     //find out sum of 
 		
 		int sum=0;
 		for(int i=0;i<nums.length;i++)

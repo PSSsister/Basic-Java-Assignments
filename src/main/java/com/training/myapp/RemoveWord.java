@@ -4,42 +4,34 @@ import java.util.StringTokenizer;
 
 public class RemoveWord {
 	
-	public static String RemoveWordsFromSentence(String s,String del,int pos)
+	public static String removeWordsFromSentence(String s,String del,int pos)
 	{
-		 s=s.toUpperCase();
+		 s=s.toUpperCase();                  //Convert String into uppercase by calling String uppercase method
 		 int l=s.length();
-		 char last=s.charAt(l-1);//Extracting Last Character
+		
 		 String ans=" ";
-		 
-		 /*Checking whether the sentence ends with '.' or'?' or not */
-		 if(last !='.' && last !='?' &&  last !='!')
+		
+	     StringTokenizer str= new StringTokenizer(s," .?!"); //String Tokenizer Create Tokens separate the String into tokens
+	     int c=str.countTokens();  //countTokens count the tokens
+		 String w="";
+		 if(pos<1||pos>l)        //check for the position value
 		 {
-			 System.out.println("Invalid Input.End a sentence either '.'?' or '!' only");
+				 System.out.println("Sorry! The word position entered is out of range");
 		 }
 		 else
 		 {
-			 StringTokenizer str= new StringTokenizer(s," .?!");
-			 int c=str.countTokens();
-			 String w="";
-			 if(pos<1||pos>l)
-			 {
-				 System.out.println("Sorry! The word position entered is out of range");
-			 }
-			 else
-			 {
-				 for(int i=1;i<=c;i++)
-				 {
-					 w=str.nextToken();
-					 if(w.equals(del)==true && i==pos)
-					 
-						 continue;
+			for(int i=1;i<=c;i++) //Iterate the tokens upto the countOfTokens
+			{
+			  w=str.nextToken();  //to get next token
+			  if(w.equals(del)==true && i==pos)
+					  continue;
 			        ans=ans + w +" ";
 						 
-				 }
-				 System.out.println("Output: "+ans.trim()+last);
-				 
 			 }
+				 System.out.println("Output: "+ans.trim());
+				 
 		 }
+		
 		return ans;
 		
 	}

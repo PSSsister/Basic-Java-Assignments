@@ -14,7 +14,7 @@ public class PallindromeString {
 	 * access specifier=public
 	 */
 	
-	public static boolean CheckPallindrome(String s)
+	public static boolean checkPallindrome(String s)
 	{
 		
 		String temp=" ";
@@ -52,14 +52,14 @@ public class PallindromeString {
 	 */
 
 	
-	public static HashMap<String,Integer> CountCharactersOfPallindrome(String str[])
+	public static HashMap<String,Integer> countCharactersOfPallindrome(String str[])
 	{
-		HashMap<String,Integer> hmap=new HashMap<>();
-		for(int index=0;index<str.length;index++)
+		HashMap<String,Integer> hmap=new HashMap<>();  //Take a generic hashmap
+		for(int index=0;index<str.length;index++)      //iterate String array
 	    { 
-			 if(CheckPallindrome(str[index]))
+			 if(checkPallindrome(str[index]))        //call checkPaalindrome method to get pallindrome Strings
 			 {
-				 hmap.put(descOrder(str[index]), str[index].length());
+				 hmap.put(descOrder(str[index]), str[index].length()); //put the descending order of pallindrome string as key and count of characters as value
 			 }
 			 
 		}

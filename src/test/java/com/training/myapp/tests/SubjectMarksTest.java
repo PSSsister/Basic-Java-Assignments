@@ -11,6 +11,8 @@ public class SubjectMarksTest {
 	/**
 	 * @Test annotation InOrder to test each Method with different scenario
 	 */
+	
+	
 	@Test
 	public void testSubjectMarksResultWithAllMarksAboveSixty() {
 		assertEquals("Passed",SubjectMarks.subjectMarks(65, 67, 65));

@@ -18,10 +18,10 @@ public class Discount {
 		{
 			throw new PriceZeroException("Please enter price Greater than zero");
 		}
-		double discountAmount=price*35/100;
+		double discountAmount=price*35/100;  
 		System.out.println(discountAmount);
-		double NewItemPrice=price-discountAmount;
-		return NewItemPrice;
+		double newItemPrice=price-discountAmount;
+		return newItemPrice;
 		
 		
 				

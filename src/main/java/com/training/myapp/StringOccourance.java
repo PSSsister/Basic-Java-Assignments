@@ -2,7 +2,7 @@ package com.training.myapp;
 
 public class StringOccourance {
 	
-	public static int NumberOfOccurance(String[]s,String name)
+	public static int numberOfOccurance(String[]s,String name)
 	{
 		
 		int count=0;

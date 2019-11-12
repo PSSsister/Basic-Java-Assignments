@@ -10,6 +10,8 @@ public class StringOccouranceTest {
 	/**
 	 * @Test annotation InOrder to test each Method with different scenario
 	 */
+	
+	
 	@Test
 	public void testStringOccuranceCount() {
 		
@@ -17,7 +19,7 @@ public class StringOccouranceTest {
 				"Kity","Meery","Smith","Johnson", "Bill","Williams","Jones","Brown","Davis","Miller","Wilson",
 				"Moore","Taylor","Anderson","Thomas","Jackson"};
 		
-		assertEquals( 2,StringOccourance.NumberOfOccurance(names,"Sam"));
+		assertEquals( 2,StringOccourance.numberOfOccurance(names,"Sam"));
 		
 		
 	}
@@ -29,7 +31,7 @@ public class StringOccouranceTest {
 				"Kity","Meery","Smith","Johnson", "Bill","Williams","Jones","Brown","Davis","Miller","Wilson",
 				"Moore","Taylor","Anderson","Thomas","Jackson"};
 		
-		assertEquals( 0,StringOccourance.NumberOfOccurance(names,"Priyanka"));
+		assertEquals( 0,StringOccourance.numberOfOccurance(names,"Priyanka"));
 		
 		
 	}

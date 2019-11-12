@@ -11,12 +11,14 @@ public class ArmstrongTest {
 	/**
 	 * @Test annotation InOrder to test each Method with different scenario
 	 */
+	
+	//Test method when the number is Armstrong
 	@Test
 	 public void TestValidArmstrongNumber() {
 	
 		 assertEquals(true,ArmStrong.checkArmstrong(153));
 	}
-	
+	//Test method when the number is  not Armstrong
 	@Test
 	 public void TestInValidArmstrongNumber() {
 	

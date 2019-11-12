@@ -11,9 +11,10 @@ public class ArmstrongRangeTest {
 	
 	/**
 	 * @Test annotation InOrder to test each Method with different scenario
+	 * Here it check Armstrong number in given Range
 	 */
 	@Test 
-	public void testwhetherArmstrongAreInValidRange() {
+	public void testNumberOfArmstrongNumberInGivenRange() {
 		int[] a= ArmstrongRange.checkArmstrongNumber();
 		int[] e= {153,370,371,407,0};
 		assertArrayEquals(e,a);

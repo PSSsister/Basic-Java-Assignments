@@ -4,7 +4,7 @@ import com.training.myapp.exceptions.InvalidCtcException;
 
 public class IncomeTaxCalculator {
 	
-	public static double IncomeTaxCalculate(double ctc) throws InvalidCtcException
+	public static double incomeTaxCalculate(double ctc) throws InvalidCtcException
 	{
 		double tax=0.0;
 		if(ctc>=0 && ctc<=180000.0)

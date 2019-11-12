@@ -16,7 +16,7 @@ public class PallindromeStringTest {
 	@Test
 	public void testTheStringArrayToCheckWhetherStringIsPallindromeAndArrangeCharsInDescOrderAndCountTheNumberOfCharacters() {
 		
-		HashMap<String,Integer> hmapActual=PallindromeString.CountCharactersOfPallindrome(PallindromeString.str);
+		HashMap<String,Integer> hmapActual=PallindromeString.countCharactersOfPallindrome(PallindromeString.str);
 		HashMap<String,Integer> hmapExpected=new HashMap<>();
 		hmapExpected.put("MMDAA",5);
 		hmapExpected.put("BBAA",4);
@@ -29,7 +29,7 @@ public class PallindromeStringTest {
 	@Test
 	public void testTheStringArrayWhereStringIsNotPallindrome() {
 		String[] str= {"MEN","PAPER","AID","PEN","APPLE","CIDCO","PENCIL","ERASER","GATE","PENPENCIL"};
-		HashMap<String,Integer> hmapActual=PallindromeString.CountCharactersOfPallindrome(str);
+		HashMap<String,Integer> hmapActual=PallindromeString.countCharactersOfPallindrome(str);
 		HashMap<String,Integer> hmapExpected=new HashMap<>();
 		assertEquals(hmapExpected,hmapActual);
 	}

@@ -1,5 +1,8 @@
 package com.training.myapp;
 
+import com.training.myapp.exceptions.InvalidInputException;
+
+
 public class Interest {
 	
 
@@ -9,10 +12,11 @@ public class Interest {
 	 * Argument=double principle,double rate,double time
 	 * access specifier=public
 	 */
-	public static double simpleInt(double p,double rate,double time)
+	public static double simpleInt(double principle,double rate,double time) throws InvalidInputException
 	{
-        
-		return (p*time*rate)/100;
+        checkValidInput(principle,rate,time);
+        double simInt=principle*time*rate/100;
+		return simInt;
 	}
 
 	/*Method Type:static
@@ -22,12 +26,18 @@ public class Interest {
 	 * access specifier=public
 	 */
 
-	public static double compInt(double p,double rate,double time)
+	public static double compInt(double principle,double rate,double time) throws InvalidInputException
 	{
-	
-		return p*Math.pow(1.0+rate/100.0, time)-p;
+		checkValidInput(principle,rate,time);
+        double comInt=principle*Math.pow(1.0+rate/100.0, time)-principle;
+		
+		return comInt;
 	}
 	
+	static void checkValidInput(double principle,double rate,double time) throws InvalidInputException {
+		if(principle <= 0 || rate <= 0 || time <= 0) {
+			throw new InvalidInputException("Please enter proper values");
+		}
 
-
+}
 }

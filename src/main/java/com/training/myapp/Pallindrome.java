@@ -17,8 +17,9 @@ public class Pallindrome {
 
 			temp=temp+s.charAt(i);        
 		}
-		if(temp.trim().equals(s))
-		{System.out.println(temp);
+		if(temp.trim().equals(s))            
+		{
+			System.out.println(temp);
 			return true;
 		}
 		return false;

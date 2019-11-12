@@ -12,11 +12,13 @@ public class StringDuplicateTest {
 	/**
 	 * @Test annotation InOrder to test each Method with different scenario
 	 */
+	
+	//check the duplicate characters and return new string 
 	@Test
 	public void testDuplicateCharacterOccuranceAndReturnUniqueString() {
 		assertEquals("abc",StringDuplicate.removeDuplicateCharacters("abcabcabc"));
 	}
-
+  
 	@Test
 	public void testDuplicateCharacterOccuranceWhenProvidedEmptyStringAndReturnUniqueString() {
 		assertEquals("",StringDuplicate.removeDuplicateCharacters(""));

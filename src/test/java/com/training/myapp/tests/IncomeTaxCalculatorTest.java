@@ -12,7 +12,7 @@ public class IncomeTaxCalculatorTest {
 	@Test
 	public void testIncomeTaxByPaasingCtc() throws InvalidCtcException {
 		
-		double tax1=IncomeTaxCalculator.IncomeTaxCalculate(300000.0);
+		double tax1=IncomeTaxCalculator.incomeTaxCalculate(300000.0);
 		double tax2=30000.0;
 		assertEquals(tax2,tax1,0.02);
 	}
@@ -20,7 +20,7 @@ public class IncomeTaxCalculatorTest {
 	@Test
 	public void testIncomeTaxByPaasingCtcAsZero() throws InvalidCtcException {
 		
-		double tax1=IncomeTaxCalculator.IncomeTaxCalculate(0.0);
+		double tax1=IncomeTaxCalculator.incomeTaxCalculate(0.0);
 		double tax2=0.0;
 		assertEquals(tax2,tax1,0.02);
 	}
@@ -28,7 +28,7 @@ public class IncomeTaxCalculatorTest {
 	@Test(expected=InvalidCtcException.class)
 	public void testIncomeTaxByPaasingCtcAsNegative() throws InvalidCtcException {
 		
-		IncomeTaxCalculator.IncomeTaxCalculate(-1000.0);
+		IncomeTaxCalculator.incomeTaxCalculate(-1000.0);
 		
 	}
 
