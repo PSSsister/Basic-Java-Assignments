@@ -7,6 +7,7 @@ public class ArmStrong {
 	
 	public static boolean checkArmstrong(int number) {
 		
+		
 		int sum = 0,rem;                          
 		int orgnum=number;
 		//Iterate the loop until while number is not equal to 0
@@ -16,7 +17,7 @@ public class ArmStrong {
 			sum=sum+(rem*rem*rem);      
 			number=number/10;          //find quotient and assigned it to the number
 		}
-		if(orgnum==sum)            //check orgnum is equal to the sum if yes the execute if block
+		if(orgnum==sum)            //check original number is equal to the sum if yes the execute if block
 		{
 			return true;
 			

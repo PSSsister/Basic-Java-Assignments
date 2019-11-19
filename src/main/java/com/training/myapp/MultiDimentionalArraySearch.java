@@ -12,7 +12,7 @@ public class MultiDimentionalArraySearch {
 			throw new ArrayIsEmptyException("Array should not be empty");
 		}
 		
-		boolean elementFound =false;
+		boolean elementFound = false;
 		
 	   for(int i=0;i<m.length;i++)
 	   {

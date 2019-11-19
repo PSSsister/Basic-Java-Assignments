@@ -24,4 +24,7 @@ public class ArmstrongTest {
 	
 		 assertEquals(false,ArmStrong.checkArmstrong(532));
 	}
+	
+
+	
 }
